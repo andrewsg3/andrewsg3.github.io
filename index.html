@@ -1,15 +1,77 @@
-<!DOCTYPE HTML>
+<!-- Template from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_start_page&stacked=h -->
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://kit.fontawesome.com/f5152865ad.js" crossorigin="anonymous"></script>
+  </head>
+  
 <body>
-	<div>
-		<a href="logo.jpg" alt="NVP logo">NVP Logo</a>
-		<div>
-			<h1>Hello, world!</h1>
-			<a href="home">Home</a>
-			<a href="contact">Contact</a>
-			<a herf="about">About</a>
+	<!-- NAVBAR -->
+	<div class="w3-top">
+		<div class="w3-bar w3-orange w3-text-white w3-card w3-left-align w3-large">
+		<a href="#" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+		<a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
+		</div>
+		<!-- ALTERNATE SMALL NAVBAR - IMPLENENTATION DICTATED BY CSS -->
+		<div id="navDemo" class="w3-bar-block w3-orange w3-text-white w3-hide w3-hide-large w3-hide-medium w3-large">
+		<a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+		<a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+		<a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+		<a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
 		</div>
 	</div>
+
+	<!-- Header -->
+	<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+		<h1 class="w3-margin w3-jumbo">NEPAL VOLUNTEER PROGRAM</h1>
+		<p class="w3-xlarge">Registered Charity SC49434</p>
+		<button class="w3-button w3-orange w3-text-white w3-padding-large w3-large w3-margin-top">Learn More</button>
+	</header>
+
+	<!-- First Grid -->
+	<div class="w3-row-padding w3-padding-64 w3-container">
+		<div class="w3-content">
+		<div class="w3-twothird">
+			<h1>What is NVP?</h1>
+			<h5 class="w3-padding-32">The Nepal Volunteer Program was formed in 2019 to create lifelong connections between the UK and Nepal through volunteer placements.</h5>
+
+			<p class="w3-text-grey">
+			Our volunteers have worked in schools, universities, observatories, engineering firms, hospitals, and physiotherapy clinics. Volunteering is an incredible way to exchange skills and perspectives. The benefits of a good placement can last a lifetime, both for the volunteer and the hosts who accomodate them. We aim to become the UK's number one resource for </p>
+		</div>
+
+		<div class="w3-third w3-center w3-padding-64">
+			<!--<i class="fa fa-anchor w3-padding-64 w3-text-red"></i>-->
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Nepal.svg/1200px-Flag_of_Nepal.svg.png" class="w3-image w3-margin-top w3-margin-left">
+		</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-32  w3-opacity w3-black">  
+		<div class="w3-xlarge w3-left w3-threequarter">
+
+			<a href="https://www.facebook.com/Nepal-Volunteer-Program-1164796420364565" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity w3-margin"></i></a>
+
+		<i class="fa fa-linkedin w3-hover-opacity w3-margin"></i>
+		<p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		</div>
+		<div class="w3-quarter">
+		<img src="" alt="Hello">
+		</div>
+	</footer>
+
+	<script>
+	// Used to toggle the menu on small screens when clicking on the menu button
+	function myFunction() {
+		var x = document.getElementById("navDemo");
+		if (x.className.indexOf("w3-show") == -1) {
+		x.className += " w3-show";
+		} else { 
+		x.className = x.className.replace(" w3-show", "");
+		}
+	}
+	</script>
 </body>
