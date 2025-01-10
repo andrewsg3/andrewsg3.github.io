@@ -1,0 +1,92 @@
+<!-- Template from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_start_page&stacked=h -->
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="styleshee" href="style.css">
+	<link href = "assets/logo.png" rel="icon">
+	<script src="https://kit.fontawesome.com/f5152865ad.js" crossorigin="anonymous"></script>
+	<title>Andrew SG</title>
+</head>
+  
+<body>
+	<!-- NAVBAR -->
+	<div class="w3-top">
+		<div class="w3-bar w3-amber w3-card w3-left-align w3-large w3-theme-d1">
+		<a href="#" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+		<a href="#" class="w3-bar-item w3-button w3-padding-large w3-black w3-text-amber">Home</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
+		</div>
+		<!-- ALTERNATE SMALL NAVBAR - IMPLENENTATION DICTATED BY CSS -->
+		<div id="navDemo" class="w3-bar-block w3-orange w3-text-white w3-hide w3-hide-large w3-hide-medium w3-large">
+		<a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+		<a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+		<a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+		<a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+		</div>
+	</div>
+
+	<!-- Header -->
+	<header id="image_header" class="w3-container w3-black w3-center" style="padding:128px 16px">
+		<h1 class="w3-margin w3-jumbo w3-text-amber">asg</h1>
+		<p class="w3-xlarge w3-text-amber">be at peace</p>
+		<button class="w3-button w3-amber w3-text-black w3-padding-large w3-large w3-margin-top">who am i</button>
+	</header>
+
+	<!-- First Grid -->
+	<div class="w3-row-padding w3-padding-64 w3-container w3-black">
+		<div class="w3-content">
+		<div class="w3-twothird">
+			<h1 class="w3-text-blue">[the days that are yet to be]</h1>
+			<h5 class="w3-padding-32 w3-text-blue">[in this unlife in this life 1408_100125_-37.740173_145.005605]</h5>
+
+			<p class="w3-text-blue"><i>the monkey babe stares at me from above my webcam. a varicose vein sits atop his left cheek. he stares out of eyes that will not see. the reflections in his pupils an impossibility, a contradiction. he is supposed to bring me happiness. his creators were not sure he would. and yet, he does.</i></p>
+		</div>
+
+		<div class="w3-third w3-center w3-padding-64">
+			<!--<i class="fa fa-anchor w3-padding-64 w3-text-red"></i>-->
+			<img src="assets/themonkey.png" class="w3-image w3-margin-top w3-margin-left">
+		</div>
+		</div>
+	</div>
+
+	<!-- Second Grid -->
+	<div class="w3-row-padding w3-padding-64 w3-container w3-black">
+		<div class="w3-content">
+		<div class="w3-twothird">
+			<h1 class="w3-text-pink">Software</h1>
+			<h5 class="w3-padding-32 w3-text-pink">I have been programming for a long time.</h5>
+			<p class="w3-text-pink">
+			Lorem Ipsum dorito sexy.</p>
+		</div>
+
+		<div class="w3-third w3-center w3-padding-64">
+			<!--<i class="fa fa-anchor w3-padding-64 w3-text-red"></i>-->
+			<img src="assets/him.png" class="w3-image w3-margin-top w3-margin-left">
+		</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-32 w3-black">  
+		<div class="w3-xlarge w3-left w3-threequarter">
+			<p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		</div>
+		<div class="w3-quarter">
+			<p>Thank you!</p>
+		</div>
+	</footer>
+
+	<script>
+	// Used to toggle the menu on small screens when clicking on the menu button
+	function myFunction() {
+		var x = document.getElementById("navDemo");
+		if (x.className.indexOf("w3-show") == -1) {
+		x.className += " w3-show";
+		} else { 
+		x.className = x.className.replace(" w3-show", "");
+		}
+	}
+	</script>
+</body>
